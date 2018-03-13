@@ -1,11 +1,12 @@
 ﻿using Xamarin.Forms.Xaml;
+using Xamarin.Forms;
 
-namespace Instagram.Views
+namespace Instagram
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Login
+	public partial class LoginPage : ContentPage
 	{
-		public Login ()
+		public LoginPage ()
 		{
 			InitializeComponent ();
 		}

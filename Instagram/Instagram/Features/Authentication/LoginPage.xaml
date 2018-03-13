@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<local:PageProxy xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-			 xmlns:local="clr-namespace:Instagram.Proxy"
-             x:Class="Instagram.Views.Login" Padding="500,0,0,0">
+             x:Class="Instagram.LoginPage"
+			 xmlns:local="clr-namespace:Instagram"
+             Padding="500,0,0,0">
 	<ContentPage.Padding>
 		<OnPlatform x:TypeArguments="Thickness">
 			<On Platform="Android">0,0,0,0</On>
@@ -58,4 +59,4 @@
 			</StackLayout>
 		</Grid>
 	</ContentPage.Content>
-</local:PageProxy>
+</ContentPage>

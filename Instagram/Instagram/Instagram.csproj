@@ -17,32 +17,32 @@
 
 	<ItemGroup>
 	  <EmbeddedResource Include="App.xaml" />
-	  <EmbeddedResource Include="Features\Main\Feed.xaml">
+	  <EmbeddedResource Include="Features\Main\FeedPage.xaml">
 	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 	  </EmbeddedResource>
-	  <EmbeddedResource Include="Features\Authentication\Login.xaml">
+	  <EmbeddedResource Include="Features\Authentication\LoginPage.xaml">
 	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 	  </EmbeddedResource>
-	  <EmbeddedResource Include="Features\Authentication\Welcome.xaml">
+	  <EmbeddedResource Include="Features\Authentication\WelcomePage.xaml">
 	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 	  </EmbeddedResource>
 	</ItemGroup>
 
 	<ItemGroup>
 	  <PackageReference Include="Autofac" Version="4.6.1" />
-	  <PackageReference Include="Exrin" Version="2.0.1" />
+	  <PackageReference Include="FreshMvvm" Version="2.2.4" />
 	  <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="1.8.1" />
 	  <PackageReference Include="Xamarin.Forms" Version="2.3.5.256-pre6" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Features\Main\Feed.xaml.cs">
+	  <Compile Update="Features\Main\FeedPage.xaml.cs">
 	    <SubType>Code</SubType>
 	  </Compile>
-	  <Compile Update="Features\Authentication\Login.xaml.cs">
+	  <Compile Update="Features\Authentication\LoginPage.xaml.cs">
 	    <SubType>Code</SubType>
 	  </Compile>
-	  <Compile Update="Features\Authentication\Welcome.xaml.cs">
+	  <Compile Update="Features\Authentication\WelcomePage.xaml.cs">
 	    <SubType>Code</SubType>
 	  </Compile>
 	</ItemGroup>

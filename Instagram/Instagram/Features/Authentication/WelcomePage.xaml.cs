@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Instagram.Views
+namespace Instagram
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Welcome
+	public partial class WelcomePage : ContentPage
 	{
-		public Welcome ()
+		public WelcomePage ()
 		{
 			InitializeComponent ();
 		}

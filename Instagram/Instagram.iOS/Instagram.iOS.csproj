@@ -119,8 +119,11 @@
     <Reference Include="Autofac, Version=4.6.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Autofac.4.6.1\lib\netstandard1.1\Autofac.dll</HintPath>
     </Reference>
-    <Reference Include="Exrin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Exrin.2.0.1\lib\netstandard1.1\Exrin.dll</HintPath>
+    <Reference Include="FreshIOC, Version=1.0.6606.27413, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FreshMvvm.2.2.4\lib\netstandard1.0\FreshIOC.dll</HintPath>
+    </Reference>
+    <Reference Include="FreshMvvm, Version=1.0.6606.27413, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FreshMvvm.2.2.4\lib\netstandard1.0\FreshMvvm.dll</HintPath>
     </Reference>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.8.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xam.Plugins.Forms.ImageCircle.1.8.1\lib\Xamarin.iOS10\ImageCircle.Forms.Plugin.Abstractions.dll</HintPath>

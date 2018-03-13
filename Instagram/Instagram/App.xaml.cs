@@ -1,7 +1,6 @@
-﻿using Exrin.Abstraction;
-using Exrin.Framework;
-using Instagram.Views;
+﻿using Instagram.Views;
 using Xamarin.Forms;
+using FreshMvvm;
 
 namespace Instagram
 {
@@ -11,23 +10,15 @@ namespace Instagram
 		{
 			InitializeComponent();
 
-			// If you want to set specific platform only options, move this to each native platform project
-			Exrin.Framework.App.Init();
+            var page = FreshPageModelResolver.ResolvePageModel<WelcomePageModel>();
+            var basicNavContainer = new FreshNavigationContainer(page);
+            MainPage = basicNavContainer;
+//            MainPage = new NavigationPage(new LaunchPage(this));
 
-			// Everything is setup, and the MainPage set here
-			Bootstrapper.GetInstance()
-						.Init()
-						.Get<INavigationService>()
-						.Navigate(new StackOptions()
-						{
-							StackChoice = Stacks.Authentication
-						});
 
-			
+        }
 
-		}
-
-		protected override void OnStart()
+        protected override void OnStart()
 		{
 			// Handle when your app starts
 		}
