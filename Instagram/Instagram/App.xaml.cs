@@ -1,5 +1,4 @@
-﻿using Instagram.Views;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using FreshMvvm;
 
 namespace Instagram
@@ -10,7 +9,7 @@ namespace Instagram
 		{
 			InitializeComponent();
 
-            var page = FreshPageModelResolver.ResolvePageModel<WelcomePageModel>();
+            var page = FreshPageModelResolver.ResolvePageModel<LoginPageModel>();
             var basicNavContainer = new FreshNavigationContainer(page);
             MainPage = basicNavContainer;
 //            MainPage = new NavigationPage(new LaunchPage(this));

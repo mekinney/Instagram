@@ -31,8 +31,8 @@ namespace Instagram
 					ViewCount = 10517,
 					Comment = "latenightseth Enjoy your well-deserved vacation, Mr President. #LNSM",
 					CommentCount = 45,
-					Image = "latenightsethfeedimage.jpg",
-					Name = "latenightseth",
+					Image = "Burger.jpg",
+					Name = "superfred",
 					PostedAt = "1 hour ago"
 				},
 
@@ -41,19 +41,19 @@ namespace Instagram
                     ViewCount = 1,
                     Comment = "latenightseth Nubag alert. #LNSM",
                     CommentCount = 45,
-                    Image = "latenightsethfeedimage.jpg",
-                    Name = "latenightseth",
+                    Image = "Hawaii.jpg",
+                    Name = "superfred",
                     PostedAt = "1 hour ago"
                 },
 
                 new Data()
                 {
                     ViewCount = 1,
-                    Comment = "latenightseth Nubag alert. #LNSM",
-                    CommentCount = 45,
-                    Image = "latenightsethfeedimage.jpg",
-                    Name = "latenightseth",
-                    PostedAt = "1 hour ago"
+                    Comment = "magicmike Let it snow, let it snow, let it snow. #SNOW",
+                    CommentCount = 4,
+                    Image = "SnowTruck.jpg",
+                    Name = "magicmike",
+                    PostedAt = "2 hours ago"
                 }
 
 

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 				 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-				 xmlns:local="clr-namespace:Instagram.Proxy"
+				 xmlns:local="clr-namespace:Instagram"
 				 xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
-				 x:Class="Instagram.Views.Feed">
+				 x:Class="Instagram.FeedPage">
 	<!-- This is a quick mock up. I would normally take repeated XAML, and move them into my own controls, and put styles in the ResourceDictionary -->
 	<ContentPage.Padding>
 		<OnPlatform x:TypeArguments="Thickness">
@@ -38,11 +38,11 @@
 					<RowDefinition Height="2" />
 				</Grid.RowDefinitions>
 				<Image Source="camera.png" WidthRequest="24" Margin="10,0,0,0" />
-				<Image Source="InstagramLogo.png" HorizontalOptions="CenterAndExpand" Grid.Column="1" HeightRequest="40" />
+				<Image Source="GrittyLogo.png" HorizontalOptions="CenterAndExpand" Grid.Column="1" HeightRequest="40" />
 				<Image Source="send.png" WidthRequest="24" Grid.Column="2" Margin="0,0,10,0" />
 				<Label BackgroundColor="#bababa" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HeightRequest="2" Grid.Row="1" Grid.ColumnSpan="3" />
 			</Grid>
-			<Grid Grid.Row="1" Margin="10,0,0,0">
+			<!--<Grid Grid.Row="1" Margin="10,0,0,0">
 				<Grid.ColumnDefinitions>
 					<ColumnDefinition Width="70" />
 					<ColumnDefinition Width="70" />
@@ -61,7 +61,7 @@
 					<Label Text="latenightseth" HorizontalOptions="Center" FontSize="11" TextColor="Black" />
 				</StackLayout>
 
-			</Grid>
+			</Grid>-->
 			<ListView Grid.Row="2" ItemsSource="{Binding InstagramFeed}" HasUnevenRows="true">
 				<ListView.ItemTemplate>
 					<DataTemplate>

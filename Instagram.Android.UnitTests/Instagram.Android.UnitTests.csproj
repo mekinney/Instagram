@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.props')" />
-  <Import Project="..\packages\xunit.core.2.3.1\build\xunit.core.props" Condition="Exists('..\packages\xunit.core.2.3.1\build\xunit.core.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -83,23 +82,20 @@
     <Reference Include="xunit.abstractions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
       <HintPath>..\packages\xunit.abstractions.2.0.1\lib\netstandard1.0\xunit.abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="xunit.assert">
-      <HintPath>..\packages\xunit.assert.2.3.1\lib\netstandard1.1\xunit.assert.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="xunit.assert, Version=2.2.0.3545, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.assert.2.2.0\lib\netstandard1.1\xunit.assert.dll</HintPath>
     </Reference>
-    <Reference Include="xunit.core">
-      <HintPath>..\packages\xunit.extensibility.core.2.3.1\lib\netstandard1.1\xunit.core.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="xunit.core, Version=2.2.0.3545, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.extensibility.core.2.2.0\lib\netstandard1.1\xunit.core.dll</HintPath>
     </Reference>
-    <Reference Include="xunit.execution.dotnet">
-      <HintPath>..\packages\xunit.extensibility.execution.2.3.1\lib\netstandard1.1\xunit.execution.dotnet.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="xunit.execution.dotnet, Version=2.2.0.3545, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.extensibility.execution.2.2.0\lib\netstandard1.1\xunit.execution.dotnet.dll</HintPath>
     </Reference>
     <Reference Include="xunit.runner.devices, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\xunit.runner.devices.2.3.3\lib\monoandroid80\xunit.runner.devices.dll</HintPath>
     </Reference>
-    <Reference Include="xunit.runner.utility.netstandard15, Version=2.3.1.3858, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
-      <HintPath>..\packages\xunit.runner.utility.2.3.1\lib\netstandard1.5\xunit.runner.utility.netstandard15.dll</HintPath>
+    <Reference Include="xunit.runner.utility.netstandard15, Version=2.2.0.3545, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.runner.utility.2.2.0\lib\netstandard1.5\xunit.runner.utility.netstandard15.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -109,6 +105,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
@@ -152,7 +149,6 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\xunit.core.2.3.1\build\xunit.core.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.core.2.3.1\build\xunit.core.props'))" />
     <Error Condition="!Exists('..\packages\Xamarin.Android.Support.v7.CardView.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.v7.CardView.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Android.Support.v7.CardView.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.v7.CardView.targets'))" />
     <Error Condition="!Exists('..\packages\Xamarin.Android.Support.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Android.Support.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets'))" />
     <Error Condition="!Exists('..\packages\Xamarin.Android.Support.Core.UI.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Core.UI.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Android.Support.Core.UI.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Core.UI.targets'))" />
@@ -168,8 +164,6 @@
     <Error Condition="!Exists('..\packages\Xamarin.Android.Support.Design.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Design.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Android.Support.Design.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Design.targets'))" />
     <Error Condition="!Exists('..\packages\Xamarin.Android.Support.v7.MediaRouter.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.v7.MediaRouter.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Android.Support.v7.MediaRouter.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.v7.MediaRouter.targets'))" />
     <Error Condition="!Exists('..\packages\Xamarin.Android.Support.v4.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.v4.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Android.Support.v4.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.v4.targets'))" />
-    <Error Condition="!Exists('..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets'))" />
-    <Error Condition="!Exists('..\packages\xunit.core.2.3.1\build\xunit.core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.core.2.3.1\build\xunit.core.targets'))" />
     <Error Condition="!Exists('..\packages\xunit.runner.devices.2.3.3\build\monoandroid80\xunit.runner.devices.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.runner.devices.2.3.3\build\monoandroid80\xunit.runner.devices.targets'))" />
     <Error Condition="!Exists('..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.props'))" />
     <Error Condition="!Exists('..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.targets'))" />
@@ -189,8 +183,6 @@
   <Import Project="..\packages\Xamarin.Android.Support.Design.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Design.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Design.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Design.targets')" />
   <Import Project="..\packages\Xamarin.Android.Support.v7.MediaRouter.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.v7.MediaRouter.targets" Condition="Exists('..\packages\Xamarin.Android.Support.v7.MediaRouter.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.v7.MediaRouter.targets')" />
   <Import Project="..\packages\Xamarin.Android.Support.v4.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.v4.targets" Condition="Exists('..\packages\Xamarin.Android.Support.v4.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.v4.targets')" />
-  <Import Project="..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('..\packages\NETStandard.Library.2.0.1\build\netstandard2.0\NETStandard.Library.targets')" />
-  <Import Project="..\packages\xunit.core.2.3.1\build\xunit.core.targets" Condition="Exists('..\packages\xunit.core.2.3.1\build\xunit.core.targets')" />
   <Import Project="..\packages\xunit.runner.devices.2.3.3\build\monoandroid80\xunit.runner.devices.targets" Condition="Exists('..\packages\xunit.runner.devices.2.3.3\build\monoandroid80\xunit.runner.devices.targets')" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.280555\build\netstandard1.0\Xamarin.Forms.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

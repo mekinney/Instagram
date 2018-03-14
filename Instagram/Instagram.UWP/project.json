@@ -2,8 +2,9 @@
   "dependencies": {
     "FreshMvvm": "2.2.4",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.3.3",
+    "NETStandard.Library": "1.6.0",
     "Xam.Plugins.Forms.ImageCircle": "1.8.1",
-    "Xamarin.Forms": "2.3.5.256-pre6"
+    "Xamarin.Forms": "2.5.0.280555"
   },
   "frameworks": {
     "uap10.0.10586": {}

@@ -12,6 +12,16 @@ namespace Instagram
         {
 
         }
-		
-	}
+
+        public Command LoginScreenCommand
+        {
+            get
+            {
+                return new Command(async () => {
+                        await CoreMethods.PushPageModel<LoginPageModel>();
+                    });
+            }
+        }
+
+    }
 }

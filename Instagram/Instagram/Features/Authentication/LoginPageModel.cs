@@ -18,7 +18,7 @@ namespace Instagram
             get
             {
                 return new Command(async () => {
-                    await CoreMethods.PushPageModel<FeedPageModel>();
+                    await CoreMethods.PushPageModel<FeedPageModel>(null, true);
                 });
             }
         }

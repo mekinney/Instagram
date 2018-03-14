@@ -1,50 +1,26 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
-	<PropertyGroup>
-		<TargetFramework>netstandard1.3</TargetFramework>
-		<AssemblyName>Instagram</AssemblyName>
-		<PackageId>Instagram</PackageId>
-		<NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
-		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
-		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-		<PackageTargetFallback>$(PackageTargetFallback);portable-win+net45+wp8+win81+wpa8</PackageTargetFallback>
-	</PropertyGroup>
-
-	<ItemGroup>
-	  <None Remove="App.xaml" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <EmbeddedResource Include="App.xaml" />
-	  <EmbeddedResource Include="Features\Main\FeedPage.xaml">
-	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-	  </EmbeddedResource>
-	  <EmbeddedResource Include="Features\Authentication\LoginPage.xaml">
-	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-	  </EmbeddedResource>
-	  <EmbeddedResource Include="Features\Authentication\WelcomePage.xaml">
-	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-	  </EmbeddedResource>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <PackageReference Include="Autofac" Version="4.6.1" />
-	  <PackageReference Include="FreshMvvm" Version="2.2.4" />
-	  <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="1.8.1" />
-	  <PackageReference Include="Xamarin.Forms" Version="2.3.5.256-pre6" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Compile Update="Features\Main\FeedPage.xaml.cs">
-	    <SubType>Code</SubType>
-	  </Compile>
-	  <Compile Update="Features\Authentication\LoginPage.xaml.cs">
-	    <SubType>Code</SubType>
-	  </Compile>
-	  <Compile Update="Features\Authentication\WelcomePage.xaml.cs">
-	    <SubType>Code</SubType>
-	  </Compile>
-	</ItemGroup>
-
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <AssemblyName>Instagram</AssemblyName>
+    <PackageId>Instagram</PackageId>
+    <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <PackageTargetFallback>$(PackageTargetFallback);portable-win+net45+wp8+win81+wpa8</PackageTargetFallback>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.6.1" />
+    <PackageReference Include="FreshMvvm" Version="2.2.4" />
+    <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="1.8.1" />
+    <PackageReference Include="Xamarin.Forms" Version="2.5.0.280555" />
+  </ItemGroup>
 </Project>

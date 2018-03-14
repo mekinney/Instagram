@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Blend for Visual Studio 15
 VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instagram.Android", "Instagram\Instagram.Android\Instagram.Android.csproj", "{2D165C18-7F0A-42FF-AE80-C0D679372015}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Instagram", "Instagram\Instagram\Instagram.csproj", "{87AC7BD2-A83F-42E5-AF06-0665A0AD14BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instagram", "Instagram\Instagram\Instagram.csproj", "{87AC7BD2-A83F-42E5-AF06-0665A0AD14BF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instagram.UWP", "Instagram\Instagram.UWP\Instagram.UWP.csproj", "{A6119A2B-8FCF-486B-8721-E53FB0607F60}"
 EndProject

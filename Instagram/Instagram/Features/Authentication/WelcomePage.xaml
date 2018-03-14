@@ -34,8 +34,8 @@
 					<RowDefinition Height="*"/>
 					<RowDefinition Height="*"/>
 				</Grid.RowDefinitions>
-				<Image Source="InstagramLogo.png" HeightRequest="70" VerticalOptions="End" />
-				<Button AutomationId="SignUpButton" Margin="10,0,10,0" Command="{Binding LoginCommand}" Text="Sign up with email or phone number" BackgroundColor="#3897F0" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="2" />
+				<Image Source="GrittyLogo.png" HeightRequest="70" VerticalOptions="End" />
+				<Button AutomationId="SignUpButton" Margin="10,0,10,0" Command="{Binding LoginScreenCommand}" Text="Sign up with email or phone number" BackgroundColor="#3897F0" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="2" />
 			</Grid>
 			<StackLayout Grid.Row="2" BackgroundColor="#FFFFFF">
 				<Label HeightRequest="1" BackgroundColor="#E3E3E3" />

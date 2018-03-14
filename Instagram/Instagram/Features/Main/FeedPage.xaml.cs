@@ -1,11 +1,11 @@
 ﻿using Xamarin.Forms.Xaml;
 
-namespace Instagram.Views
+namespace Instagram
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Feed
+	public partial class FeedPage
 	{
-		public Feed ()
+		public FeedPage ()
 		{
 			InitializeComponent ();
 		}
